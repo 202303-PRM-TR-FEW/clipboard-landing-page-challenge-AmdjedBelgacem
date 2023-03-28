@@ -12,75 +12,234 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    body {
+      font-family: "Bai Jamjuree", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h3, h4 {
+      color: hsl(210, 10%, 33%);
+    }
+    p {
+      color: hsl(201, 11%, 66%);
+    }
+    .header, .container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+      padding: 5em 3em;
+    }
+    .header {
+      background-image: url('./images/bg-header-mobile.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .header-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    .header-buttons button {
+      margin-top: 1.5em;
+      border-radius: 5em;
+      border: none;
+      padding: 0.8em 6em;
+    }
+    .header-buttons button:first-child{
+      background-color: hsl(171, 66%, 44%);
+    }
+    .header-buttons button:last-child{
+      background-color: hsl(233, 100%, 69%);
+    }
+    .main {
+      text-align: center;
+    }
+    main h1 {
+      padding-top: 2em;
+    }
+    .pngs {
+      display: flex;
+      flex-direction: column;
+    }
+    .pngs img {
+      transform: scale(0.3);
+    }
+    footer {
+      background-color: hsl(200, 10%, 94%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    footer .logo {
+      transform: scale(0.8);
+      padding-left: 2em;
+    }
+    footer li {
+      list-style: none;
+      text-align: center;
+      line-height: 2em;
+    } 
+    footer a {
+      text-decoration: none;
+      color: hsl(210, 10%, 33%);
+    }
+    footer .socials {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em 0 0 2em;
+    }
+    .images {
+      width: 80%; height: 50%; padding: 5em 0;
+    }
+    @media only screen and (min-width: 1240px) {
+      .header-buttons {
+        flex-direction: row;
+        gap: 1em;
+      }
+      .header p {
+        width: 35em
+      }
+      .to-side {
+        display: flex;
+        justify-content: center;
+      }
+      .to-side-inside {
+        text-align: start;
+        width: 25em;
+        padding: 3em 0 0 5em;
+      }
+      .flex-icons {
+        display: flex;
+        justify-content: center;
+        padding-top: 3em;
+      }
+      .flex-icons div {
+        padding: 0 5em;
+      }
+      .pngs {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 5em;
+      }
+      footer div {
+        display: flex;
+      }
+      footer ul {
+        display: flex;
+        width: 35em;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: start;
+      }
+      footer li {
+        align-self: flex-start;
+        padding: 0 2em;
+      }
+      .socials {
+        width: 2em;
+        height: 2em;
+        gap: 2em;
+        margin-top: 2em;
+      }
+      footer .logo {
+        transform: scale(0.5);
+      }
+    }
   </style>
 </head>
 <body>
 
-  A history of everything you copy
-
-  Clipboard allows you to track and organize everything you 
-  copy. Instantly access your clipboard on all your devices.
-
-  Download for iOS
-  Download for Mac
-
-  Keep track of your snippets
-
-  Clipboard instantly stores any item you copy in the cloud, 
-  meaning you can access your snippets immediately on all your 
-  devices. Our Mac and iOS apps will help you organize everything.
-
-  Quick Search
-
-  Easily search your snippets by content, category, web address, application, and more.
-
-  iCloud Sync
-
-  Instantly saves and syncs snippets across all your devices.
-
-  Complete History
-
-  Retrieve any snippets from the first moment you started using the app.
-
-  Access Clipboard anywhere
-
-  Whether you’re on the go, or at your computer, you can access all your Clipboard 
-  snippets in a few simple clicks.
-
-  Supercharge your workflow
-
-  We’ve got the tools to boost your productivity.
-
-  Create blacklists
-
-  Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-  Plain text snippets
-
-  Remove unwanted formatting from copied text for a consistent look.
-
-  Sneak preview
-
-  Quick preview of all snippets on your Clipboard for easy access.
-
-  Clipboard for iOS and Mac OS
-
-  Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
-  and you’re ready to start adding to your clipboard.
-
-  Download for iOS
-  Download for Mac
-
-  FAQs
-  Contact Us
-  Privacy Policy
-  Press Kit
-  Install Guide
-  
+  <header class="header">
+    <img src="./images/logo.svg" alt="">
+    <h1>A history of everything you copy</h1>
+    <p>Clipboard allows you to track and organize everything you 
+      copy. Instantly access your clipboard on all your devices.</p>
+    <div class="header-buttons">
+      <button>Download for iOS</button>
+      <button>Download for Mac</button>
+    </div>
+  </header>
+  <main class="main">
+    <h1>Keep track of your snippets</h1>
+    <p>Clipboard instantly stores any item you copy in the cloud, 
+      meaning you can access your snippets immediately on all your 
+      devices. Our Mac and iOS apps will help you organize everything.
+    </p>
+    <div class="to-side">
+      <img src="./images/image-computer.png" alt="" class="images">
+      <div class="to-side-inside">
+        <h1>Quick Search</h1>
+        <p>Easily search your snippets by content, category, web address, application, and more.</p>
+        <h1>iCloud Sync</h1>
+        <p>Instantly saves and syncs snippets across all your devices.</p>
+        <h1>Complete History</h1>
+        <p>Retrieve any snippets from the first moment you started using the app.</p>
+      </div>
+    </div>
+    <h1>Access Clipboard anywhere</h1>
+    <p>Whether you’re on the go, or at your computer, you can access all your Clipboard 
+      snippets in a few simple clicks.</p>
+    <img src="./images/image-devices.png" alt="" class="images">
+  </main>
+  <main class="main main-2">
+    <h1>Supercharge your workflow</h1>
+    <p>We’ve got the tools to boost your productivity.</p>
+    <div class="flex-icons">
+      <div>
+        <img src="./images/icon-blacklist.svg" alt="">
+        <h4>Create blacklists</h4>
+        <p>Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+      </div>
+      <div>
+        <img src="./images/icon-text.svg" alt="">
+        <h4>Plain text snippets</h4>
+        <p>Remove unwanted formatting from copied text for a consistent look.</p>
+      </div>
+      <div>
+        <img src="./images/icon-preview.svg" alt="">
+        <h4>Sneak preview</h4>
+        <p>Quick preview of all snippets on your Clipboard for easy access.</p>
+      </div>
+    </div>
+    <div class="pngs">
+      <img src="./images/logo-google.png" alt="">
+      <img src="./images/logo-ibm.png" alt="">
+      <img src="./images/logo-microsoft.png" alt="">
+      <img src="./images/logo-hp.png" alt="">
+      <img src="./images/logo-vector-graphics.png" alt="">
+    </div>
+  </main>
+  <div class="container">
+    <h1>Clipboard for iOS and Mac OS</h1>
+    <p>Available for free on the App Store. Download for Mac or iOS, sync with iCloud 
+      and you’re ready to start adding to your clipboard.</p>
+    <div class="header-buttons">
+      <button>Download for iOS</button>
+      <button>Download for Mac</button>
+    </div>
+  </div>
   <footer>
+    <div>
+      <img src="./images/logo.svg" alt="" class="logo">
+      <div class="links">
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Install Guide</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Press Kit</a></li>
+        </ul>
+      </div>
+      <div class="socials">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+        <img src="./images/icon-instagram.svg" alt="">
+      </div>
+    </div>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">AMDJED BELGACEM</a>.
     </p>
   </footer>
 </body>
